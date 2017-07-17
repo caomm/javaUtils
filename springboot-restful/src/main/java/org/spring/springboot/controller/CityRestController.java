@@ -26,11 +26,13 @@ public class CityRestController {
 
     @RequestMapping(value = "/api/city", method = RequestMethod.GET)
     public List<City> findAllCity() {
+        System.out.println("查找全部的城市信息");
         return cityService.findAllCity();
     }
 
     @RequestMapping(value = "/api/city", method = RequestMethod.POST)
     public void createCity(@RequestBody City city) {
+
         cityService.saveCity(city);
     }
 
