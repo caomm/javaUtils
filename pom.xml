@@ -47,6 +47,10 @@
 		<module>springboot-dubbo-client</module>
 		<!-- Spring Boot 整合 Elasticsearch -->
 		<module>springboot-elasticsearch</module>
+		<module>sprintboot-apiRequest</module>
+
+
+
 
 		<!-- Spring Data ES 篇 -->
 		<module>spring-data-elasticsearch-crud</module>
