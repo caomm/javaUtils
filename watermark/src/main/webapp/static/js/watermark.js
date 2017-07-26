@@ -1,3 +1,10 @@
+/**
+ * 调用
+ */
+window.onload=function(){
+    watermark({ watermark_txt: "测试水印" });
+};
+
 var mask_div = document.createElement('div');
 mask_div.id = 'mask_div1';
 mask_div.appendChild(document.createTextNode("test"));
