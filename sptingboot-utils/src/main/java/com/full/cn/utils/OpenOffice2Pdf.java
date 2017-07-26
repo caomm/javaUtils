@@ -36,7 +36,7 @@ public class OpenOffice2Pdf {
         boolean flag = true;
 
         try {
-            connection=new SocketOpenOfficeConnection("192.168.0.105",8100);
+            connection=new SocketOpenOfficeConnection("10.68.68.127",8100);
             connection.connect();
             DocumentConverter converter = new StreamOpenOfficeDocumentConverter(connection);
             converter.convert(new File(inputFile), new File(outputFile));
@@ -95,6 +95,6 @@ public class OpenOffice2Pdf {
         String path = "e:/text/";
         //OpenOfficePdfConvert opc = new OpenOfficePdfConvert();
 
-        convert2PDF(path+"daochu.docx", path+"daochu.pdf");
+        convert2PDF(path+"daochu.docx", path+"daochu2.pdf");
     }
 }
