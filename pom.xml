@@ -55,7 +55,8 @@
 		<!-- Spring Data ES 篇 -->
 		<module>spring-data-elasticsearch-crud</module>
 		<module>spring-data-elasticsearch-query</module>
+        <module>watermark</module>
 
-	</modules>
+    </modules>
 
 </project>
