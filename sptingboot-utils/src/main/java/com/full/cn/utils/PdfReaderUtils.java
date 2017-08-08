@@ -14,7 +14,6 @@ import java.util.Map;
 public class PdfReaderUtils {
 
     //@Test
-    //@postconstruct
     public static Map<String,String> Pdfread(String fileName){
         File pdfFile = new File(fileName);
         Map<String,String> contextmap = new HashMap<>();
