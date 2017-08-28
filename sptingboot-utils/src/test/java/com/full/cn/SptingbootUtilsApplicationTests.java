@@ -33,6 +33,7 @@ public class SptingbootUtilsApplicationTests {
 	 */
 	@Test
 	public void getNum(){
+
 		String [] arry = {"1","2","3","1","1","2","5","2","6","6","4","4","3","3","4"};
 		Map<String,Integer> map = new HashMap<String, Integer>();
 		for(int i =0 ;i<arry.length;i++){
