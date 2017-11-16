@@ -178,6 +178,14 @@
 		</dependency>
 
 		<!--itext pdf添加水印-->
+		<!--解析xml-->
+		<!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
+		<dependency>
+			<groupId>org.dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>2.1.0</version>
+		</dependency>
+		<!--解析xml-->
 
 	</dependencies>
 
