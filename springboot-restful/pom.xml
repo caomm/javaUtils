@@ -7,7 +7,7 @@
     <artifactId>springboot-restful</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>springboot-restful :: Spsringboot 实现 Restful 服务，基于 HTTP / JSON 传输 Demo</name>
+    <name>springboot-restful</name>
 
     <!-- Spring Boot 启动父依赖 -->
     <parent>

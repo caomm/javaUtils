@@ -67,9 +67,10 @@ public class PdfAddwaterMark {
             content.showTextAligned(Element.ALIGN_CENTER, "下载时间："
                     + waterMarkName + "", 300, 10, 0);
             content.endText();
-            System.out.println("水印添加成功！！");
+
 
         }
+        System.out.println("水印添加成功！！");
         stamper.close();
     }
 
