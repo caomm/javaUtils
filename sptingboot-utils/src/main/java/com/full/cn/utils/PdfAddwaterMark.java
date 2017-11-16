@@ -24,7 +24,7 @@ public class PdfAddwaterMark {
     public static void main(String[] args) throws DocumentException,
             IOException {
         // 要输出的pdf文件
-        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File("E:\\text\\QSG.pdf")));
+        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File("E:\\text\\QSG_16.pdf")));
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         // 将pdf文件先加水印然后输出
