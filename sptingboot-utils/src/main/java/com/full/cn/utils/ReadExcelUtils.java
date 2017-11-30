@@ -1,16 +1,17 @@
 package com.full.cn.utils;
 
 
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -150,8 +151,13 @@ public class ReadExcelUtils {
 
     public static void main(String[] args) {
         try {
+            showExcel();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
             //String filepath = "F:\\easestar\\销售派2期\\20170926_审批需求_11月初\\综合办公\\流程审批\\流程审批.xlsx";
-            String filepath = "F:\\easestar\\语义分析\\语义分析数据上传模板.xlsx";
+            String filepath = "F:\\easestar\\语义分析\\12345投诉模板.xlsx";
             ReadExcelUtils excelReader = new ReadExcelUtils(filepath);
             // 对读取Excel表格标题测试
 //			String[] title = excelReader.readExcelTitle();
@@ -178,6 +184,22 @@ public class ReadExcelUtils {
             e.printStackTrace();
         }catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+
+    public static  void showExcel() throws Exception {
+        XSSFWorkbook workbook=new XSSFWorkbook(new FileInputStream(new File("F:\\easestar\\语义分析\\12345投诉模板.xlsx")));
+        XSSFSheet sheet=null;
+        for (int i = 0; i < workbook.getNumberOfSheets(); i++) {//获取每个Sheet表
+            sheet=workbook.getSheetAt(i);
+            for (int j = 0; j < sheet.getPhysicalNumberOfRows(); j++) {//获取每行
+                XSSFRow row=sheet.getRow(j);
+                for (int k = 0; k < row.getPhysicalNumberOfCells(); k++) {//获取每个单元格
+                    System.out.print(row.getCell(k)+"\t");
+                }
+                System.out.println("---Sheet表"+i+"处理完毕---");
+            }
         }
     }
 }
