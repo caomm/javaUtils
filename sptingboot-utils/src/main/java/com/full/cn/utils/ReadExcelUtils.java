@@ -1,10 +1,8 @@
 package com.full.cn.utils;
 
 
-
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
-
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +15,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author moafmoar
+ * @desc 读取excel 数据工具类
+ * @createTime 2017-11-30 20:24
+ */
 public class ReadExcelUtils {
 
     private Logger logger = LoggerFactory.getLogger(ReadExcelUtils.class);
@@ -50,9 +53,9 @@ public class ReadExcelUtils {
      *
      * @paramInputStream
      * @return String 表头内容的数组
-     * @author zengwendong
+     * @author moafmoar
      */
-    public String[] readExcelTitle() throws Exception{
+    public String[] readExcelTitle() throws Exception {
         if(wb==null){
             throw new Exception("Workbook对象为空！");
         }
@@ -74,9 +77,9 @@ public class ReadExcelUtils {
      *
      * @paramInputStream
      * @return Map 包含单元格数据内容的Map对象
-     * @author zengwendong
+     * @author moafmoar
      */
-    public Map<Integer, Map<Integer,Object>> readExcelContent() throws Exception{
+    public Map<Integer, Map<Integer,Object>> readExcelContent() throws Exception {
         if(wb==null){
             throw new Exception("Workbook对象为空！");
         }
@@ -108,7 +111,7 @@ public class ReadExcelUtils {
      *
      * @param cell
      * @return
-     * @author zengwendong
+     * @author moafmoar
      */
     private Object getCellFormatValue(Cell cell) {
         Object cellvalue = "";
