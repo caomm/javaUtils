@@ -250,6 +250,28 @@
 		</dependency>
 
 		<!-- 中文分词-->
+		<!--发送邮件 -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+
+		<!--发送邮件 -->
+
+		<!--Java 调用 python-->
+		<!--<dependency>
+			<groupId>org.python</groupId>
+			<artifactId>jython</artifactId>
+			<version>2.7.0</version>
+		</dependency>-->
+		<dependency>
+			<groupId>org.python</groupId>
+			<artifactId>jython-standalone</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<!--Java 调用 python-->
 
 	</dependencies>
 
