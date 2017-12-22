@@ -58,7 +58,7 @@ public class Ansj {
         System.out.println(ToAnalysis.parse("我经济南下车到广州.中国经济南下势头迅猛!"));*/
 
         // 多用户词典
-        String str = "神探夏洛克这部电影作者.是一个dota迷";
+        String str ="神探夏洛克这部电影作者.是一个dota迷";
         System.out.println(ToAnalysis.parse(str));
         // 两个词汇 神探夏洛克 douta迷
         Forest dic1 = new Forest();
