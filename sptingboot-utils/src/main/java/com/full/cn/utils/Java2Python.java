@@ -146,6 +146,9 @@ public class Java2Python {
         }
     }
 
+    /**
+     * 通过Java调用Python脚本的代码
+     */
     @Test
     public void testPython005(){
         try {
