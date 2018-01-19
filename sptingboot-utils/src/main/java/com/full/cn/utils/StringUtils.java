@@ -2,6 +2,7 @@ package com.full.cn.utils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,5 +18,10 @@ public class StringUtils {
             e.printStackTrace();
         }
         return map;
+    }
+
+    @Test
+    public void StringvalueOf(){
+
     }
 }
